@@ -5,26 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GuiApplication"
         mc:Ignorable="d"
-        Title="Contract Monthly Claim System" Height="450" Width="800">
+        Title="Contract Monthly Claim System" Height="450" Width="800"
+        Background="#F4F4F4" FontFamily="Segoe UI">
+
     <Grid>
         <!-- Lecturer Name Label and TextBox -->
-        <Label Content="Lecturer Name" HorizontalAlignment="Left" Margin="46,35,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="LecturerNameTextBox" HorizontalAlignment="Left" Margin="189,35,0,0" VerticalAlignment="Top" Width="200"/>
+        <Label Content="Lecturer Name" HorizontalAlignment="Left" Margin="46,35,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="SemiBold" Foreground="#2C3E50"/>
+        <TextBox x:Name="LecturerNameTextBox" HorizontalAlignment="Left" Margin="189,35,0,0" VerticalAlignment="Top" Width="200" Height="30" Padding="5" Background="#ECF0F1" BorderBrush="#BDC3C7" BorderThickness="1"/>
 
         <!-- Claim Description Label and TextBox -->
-        <Label Content="Claim Description" HorizontalAlignment="Left" Margin="46,90,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="ClaimDescriptionTextBox" HorizontalAlignment="Left" Margin="189,90,0,0" VerticalAlignment="Top" Width="400" Height="80" TextWrapping="Wrap" AcceptsReturn="True"/>
+        <Label Content="Claim Description" HorizontalAlignment="Left" Margin="46,90,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="SemiBold" Foreground="#2C3E50"/>
+        <TextBox x:Name="ClaimDescriptionTextBox" HorizontalAlignment="Left" Margin="189,90,0,0" VerticalAlignment="Top" Width="400" Height="80" TextWrapping="Wrap" AcceptsReturn="True" Padding="5" Background="#ECF0F1" BorderBrush="#BDC3C7" BorderThickness="1"/>
 
         <!-- File Upload Section -->
-        <Button Content="Browse" HorizontalAlignment="Left" Margin="189,190,0,0" VerticalAlignment="Top" Width="75" Click="BrowseButton_Click"/>
-        <TextBox x:Name="FilePathTextBox" HorizontalAlignment="Left" Margin="275,190,0,0" VerticalAlignment="Top" Width="314" IsReadOnly="True"/>
-        <Button Content="Upload" HorizontalAlignment="Left" Margin="600,190,0,0" VerticalAlignment="Top" Width="75" Click="UploadButton_Click"/>
+        <Button Content="Browse" HorizontalAlignment="Left" Margin="189,190,0,0" VerticalAlignment="Top" Width="75" Height="30" Padding="5" Background="#3498DB" Foreground="White" BorderBrush="Transparent" Click="BrowseButton_Click"/>
+        <TextBox x:Name="FilePathTextBox" HorizontalAlignment="Left" Margin="275,190,0,0" VerticalAlignment="Top" Width="314" Height="30" IsReadOnly="True" Padding="5" Background="#ECF0F1" BorderBrush="#BDC3C7" BorderThickness="1"/>
+        <Button Content="Upload" HorizontalAlignment="Left" Margin="600,190,0,0" VerticalAlignment="Top" Width="75" Height="30" Padding="5" Background="#27AE60" Foreground="White" BorderBrush="Transparent" Click="UploadButton_Click"/>
 
         <!-- Submit Claim Button -->
-        <Button Content="Submit Claim" HorizontalAlignment="Left" Margin="189,240,0,0" VerticalAlignment="Top" Width="150" Click="SubmitClaimButton_Click"/>
+        <Button Content="Submit Claim" HorizontalAlignment="Left" Margin="189,240,0,0" VerticalAlignment="Top" Width="150" Height="35" FontWeight="Bold" Padding="5" Background="#E74C3C" Foreground="White" BorderBrush="Transparent" Click="SubmitClaimButton_Click"/>
 
         <!-- Claim Actions -->
-        <Button Content="Track Claim" HorizontalAlignment="Left" Margin="189,290,0,0" VerticalAlignment="Top" Width="100" Click="TrackClaimButton_Click"/>
-        <Button Content="Approve" HorizontalAlignment="Left" Margin="300,290,0,0" VerticalAlignment="Top" Width="100" Click="ApproveButton_Click"/>
+        <Button Content="Track Claim" HorizontalAlignment="Left" Margin="189,290,0,0" VerticalAlignment="Top" Width="100" Height="35" Padding="5" Background="#2980B9" Foreground="White" BorderBrush="Transparent" Click="TrackClaimButton_Click"/>
+        <Button Content="Approve" HorizontalAlignment="Left" Margin="300,290,0,0" VerticalAlignment="Top" Width="100" Height="35" Padding="5" Background="#27AE60" Foreground="White" BorderBrush="Transparent" Click="ApproveButton_Click"/>
     </Grid>
 </Window>
